@@ -4,7 +4,7 @@ class BetterSafe implements State
 {
     private byte[] value;
     private byte maxval;
-    private ReentrantLock rlock = new ReentrantLock;
+    private ReentrantLock rlock = new ReentrantLock();
 
     BetterSafe(byte[] v) { value = v; maxval = 127; }
 

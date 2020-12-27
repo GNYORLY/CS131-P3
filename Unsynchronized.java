@@ -11,7 +11,7 @@ class Unsynchronized implements State {
     public byte[] current() { return value; }
 
     //the term synchronized was removed from this function
-    public boolean swap(int i, int j) {
+    public /*synchronized*/ boolean swap(int i, int j) {
 	if (value[i] <= 0 || value[j] >= maxval) {
 	    return false;
 	}
